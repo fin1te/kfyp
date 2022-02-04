@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190747840284",
+    "firebase_url": "https://fyp-km-1054c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fyp-km-1054c",
+    "storage_bucket": "fyp-km-1054c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190747840284:android:4e19f954b322731de734d9",
+        "android_client_info": {
+          "package_name": "com.finite.komalmatade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190747840284-pg74st4qa45oeocta681gbb0822lpe8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finite.komalmatade",
+            "certificate_hash": "67b953280b3d06613512a2fb444029a87b98dd66"
+          }
+        },
+        {
+          "client_id": "190747840284-5n50kfda6b2b6qd0irs543mt8p7aug5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAASUI9t1WSakXTzhq20RRAuOzaDMoInBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190747840284-5n50kfda6b2b6qd0irs543mt8p7aug5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

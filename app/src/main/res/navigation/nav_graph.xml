@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.finite.komalmatade.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_facultyHome"
+            app:destination="@id/facultyHome" />
+        <action
+            android:id="@+id/action_loginFragment_to_hodHome"
+            app:destination="@id/hodHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/facultyHome"
+        android:name="com.finite.komalmatade.FacultyHome"
+        android:label="FacultyHome" >
+        <action
+            android:id="@+id/action_facultyHome_to_timeTable"
+            app:destination="@id/timeTable" />
+    </fragment>
+    <fragment
+        android:id="@+id/hodHome"
+        android:name="com.finite.komalmatade.HodHome"
+        android:label="fragment_hod_home"
+        tools:layout="@layout/fragment_hod_home" />
+    <fragment
+        android:id="@+id/timeTable"
+        android:name="com.finite.komalmatade.TimeTable"
+        android:label="fragment_time_table"
+        tools:layout="@layout/fragment_time_table" />
+</navigation>

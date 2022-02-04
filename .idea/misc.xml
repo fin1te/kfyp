@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.273" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/drawable/beach_box.xml" value="0.338" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/drawable/brow_box.xml" value="0.338" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.273" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/activity_login.xml" value="0.2152027027027027" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/fragment_faculty_home.xml" value="0.33177083333333335" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/fragment_hod_home.xml" value="0.33" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/fragment_login.xml" value="0.33177083333333335" />
+        <entry key="..\:/androidproject/FYPKM/app/src/main/res/layout/fragment_time_table.xml" value="0.33177083333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
