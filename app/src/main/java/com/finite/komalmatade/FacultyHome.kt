@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.finite.komalmatade.databinding.FragmentFacultyHomeBinding
 import com.finite.komalmatade.databinding.FragmentLoginBinding
@@ -50,7 +51,7 @@ class FacultyHome : Fragment() {
         }
 
         binding!!.notifBtn.setOnClickListener {
-            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(FacultyHomeDirections.actionFacultyHomeToViewNoticeFragment())
         }
 
         binding!!.compBtn.setOnClickListener {

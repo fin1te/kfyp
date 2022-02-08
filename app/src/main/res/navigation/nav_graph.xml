@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_facultyHome_to_timeTable"
             app:destination="@id/timeTable" />
+        <action
+            android:id="@+id/action_facultyHome_to_viewNoticeFragment"
+            app:destination="@id/viewNoticeFragment" />
     </fragment>
     <fragment
         android:id="@+id/hodHome"
@@ -34,4 +37,8 @@
         android:name="com.finite.komalmatade.TimeTable"
         android:label="fragment_time_table"
         tools:layout="@layout/fragment_time_table" />
+    <fragment
+        android:id="@+id/viewNoticeFragment"
+        android:name="com.finite.komalmatade.ViewNoticeFragment"
+        android:label="ViewNoticeFragment" />
 </navigation>
