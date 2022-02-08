@@ -93,6 +93,7 @@
             android:background="@drawable/brow_box"
             android:gravity="center"
             android:paddingHorizontal="20dp"
+            android:onClick="undercon"
             android:elevation="2dp"
             android:text="Notifications"
             android:layout_gravity="center"

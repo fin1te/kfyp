@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
 import com.finite.komalmatade.databinding.FragmentFacultyHomeBinding
@@ -39,6 +40,18 @@ class HodHome : Fragment() {
         binding!!.tvdesig.text = vm.desig
 
         //binding!!.testtv.text = vm.currentUser
+
+        binding!!.createNotifBtn.setOnClickListener {
+            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding!!.findFacultyBtn.setOnClickListener {
+            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+        }
+
+        binding!!.viewCompBtn.setOnClickListener {
+            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
