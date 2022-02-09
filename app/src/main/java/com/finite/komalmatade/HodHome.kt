@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.finite.komalmatade.databinding.FragmentFacultyHomeBinding
 import com.finite.komalmatade.databinding.FragmentHodHomeBinding
@@ -42,7 +43,7 @@ class HodHome : Fragment() {
         //binding!!.testtv.text = vm.currentUser
 
         binding!!.createNotifBtn.setOnClickListener {
-            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(HodHomeDirections.actionHodHomeToCreateNoticeFragment())
         }
 
         binding!!.findFacultyBtn.setOnClickListener {

@@ -55,7 +55,7 @@ class FacultyHome : Fragment() {
         }
 
         binding!!.compBtn.setOnClickListener {
-            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(FacultyHomeDirections.actionFacultyHomeToReportComplaintsFragment())
         }
 
     }

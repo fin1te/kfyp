@@ -26,12 +26,19 @@
         <action
             android:id="@+id/action_facultyHome_to_viewNoticeFragment"
             app:destination="@id/viewNoticeFragment" />
+        <action
+            android:id="@+id/action_facultyHome_to_reportComplaintsFragment"
+            app:destination="@id/reportComplaintsFragment" />
     </fragment>
     <fragment
         android:id="@+id/hodHome"
         android:name="com.finite.komalmatade.HodHome"
         android:label="fragment_hod_home"
-        tools:layout="@layout/fragment_hod_home" />
+        tools:layout="@layout/fragment_hod_home" >
+        <action
+            android:id="@+id/action_hodHome_to_createNoticeFragment"
+            app:destination="@id/createNoticeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/timeTable"
         android:name="com.finite.komalmatade.TimeTable"
@@ -41,4 +48,18 @@
         android:id="@+id/viewNoticeFragment"
         android:name="com.finite.komalmatade.ViewNoticeFragment"
         android:label="ViewNoticeFragment" />
+    <fragment
+        android:id="@+id/reportComplaintsFragment"
+        android:name="com.finite.komalmatade.ReportComplaintsFragment"
+        android:label="ReportComplaintsFragment" />
+    <fragment
+        android:id="@+id/createNoticeFragment"
+        android:name="com.finite.komalmatade.CreateNoticeFragment"
+        android:label="CreateNoticeFragment" >
+        <action
+            android:id="@+id/action_createNoticeFragment_to_hodHome"
+            app:destination="@id/hodHome"
+            app:popUpTo="@id/hodHome"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
