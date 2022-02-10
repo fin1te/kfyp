@@ -58,6 +58,10 @@ class FacultyHome : Fragment() {
             findNavController().navigate(FacultyHomeDirections.actionFacultyHomeToReportComplaintsFragment())
         }
 
+        binding!!.cardFaculty.setOnClickListener {
+            findNavController().navigate(FacultyHomeDirections.actionFacultyHomeToViewProfileFragment())
+        }
+
     }
 
 }

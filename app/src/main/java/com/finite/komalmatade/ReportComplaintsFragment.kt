@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.finite.komalmatade.databinding.FragmentReportComplaintsBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -40,6 +41,9 @@ class ReportComplaintsFragment : Fragment() {
                 val unixTime = System.currentTimeMillis()
                 myRef.child(unixTime.toString()).child("message").setValue(text)
                 myRef.child(unixTime.toString()).child("author").setValue(vm.name)
+
+                Toast.makeText(requireContext(),"Complaint Posted Successfully!", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(ReportComplaintsFragmentDirections.actionReportComplaintsFragmentToFacultyHome())
             }
         }
 

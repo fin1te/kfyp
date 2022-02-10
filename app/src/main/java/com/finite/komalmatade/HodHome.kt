@@ -51,7 +51,12 @@ class HodHome : Fragment() {
         }
 
         binding!!.viewCompBtn.setOnClickListener {
-            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(HodHomeDirections.actionHodHomeToViewComplaintFragment())
+        }
+
+        binding!!.cardHod.setOnClickListener {
+            findNavController().navigate(HodHomeDirections.actionHodHomeToViewProfileFragment())
         }
 
     }

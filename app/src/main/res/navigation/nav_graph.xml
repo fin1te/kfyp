@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_facultyHome_to_reportComplaintsFragment"
             app:destination="@id/reportComplaintsFragment" />
+        <action
+            android:id="@+id/action_facultyHome_to_viewProfileFragment"
+            app:destination="@id/viewProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/hodHome"
@@ -38,6 +41,12 @@
         <action
             android:id="@+id/action_hodHome_to_createNoticeFragment"
             app:destination="@id/createNoticeFragment" />
+        <action
+            android:id="@+id/action_hodHome_to_viewComplaintFragment"
+            app:destination="@id/viewComplaintFragment" />
+        <action
+            android:id="@+id/action_hodHome_to_viewProfileFragment"
+            app:destination="@id/viewProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/timeTable"
@@ -51,7 +60,13 @@
     <fragment
         android:id="@+id/reportComplaintsFragment"
         android:name="com.finite.komalmatade.ReportComplaintsFragment"
-        android:label="ReportComplaintsFragment" />
+        android:label="ReportComplaintsFragment" >
+        <action
+            android:id="@+id/action_reportComplaintsFragment_to_facultyHome"
+            app:destination="@id/facultyHome"
+            app:popUpTo="@id/facultyHome"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/createNoticeFragment"
         android:name="com.finite.komalmatade.CreateNoticeFragment"
@@ -62,4 +77,12 @@
             app:popUpTo="@id/hodHome"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/viewComplaintFragment"
+        android:name="com.finite.komalmatade.ViewComplaintFragment"
+        android:label="ViewComplaintFragment" />
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.finite.komalmatade.ViewProfileFragment"
+        android:label="ViewProfileFragment" />
 </navigation>

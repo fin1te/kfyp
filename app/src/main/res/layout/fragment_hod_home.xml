@@ -20,6 +20,7 @@
             tools:context=".FacultyHome">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardHod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFF4DA"

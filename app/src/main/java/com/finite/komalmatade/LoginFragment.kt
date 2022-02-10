@@ -1,6 +1,7 @@
 package com.finite.komalmatade
 
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.finite.komalmatade.databinding.FragmentLoginBinding
@@ -40,31 +42,40 @@ class LoginFragment : Fragment() {
             //baseFragment = this@BaseFragment
         }
 
-        binding!!.loginBtn.setOnClickListener {here ->
+        binding!!.loginBtn.setOnClickListener {
+
+            Log.d("checkStage:", "onClick Reached")
 
             //Toast.makeText(here.context, "button click", Toast.LENGTH_SHORT).show()
 
             val number = binding!!.etLoginmobileno.text
             val pass = binding!!.etLoginpassword.text
 
+            //Toast.makeText(requireContext(),"$number : $pass", Toast.LENGTH_SHORT).show()
+
             val database = Firebase.database
-            val myRef = database.getReference("users")
+            val refer = database.getReference("users")
+
+
             // Read from the database
-            myRef.addValueEventListener(object: ValueEventListener {
+            refer.addValueEventListener(object: ValueEventListener {
 
                 override fun onDataChange(snapshot: DataSnapshot) {
+                    Log.d("checkStage:", "onDataChanged Reached")
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-
                     val children = snapshot!!.children
                     children.forEach {
 
                         val dbno = it.child("number").value.toString()
                         val dbpass = it.child("password").value.toString()
 
-                        //Toast.makeText(here.context, "$dbno db, $number no = $dbpass db, $pass pass", Toast.LENGTH_SHORT).show()
+                        Log.d("checkStage:", "forEach Reached")
+
+                        //Toast.makeText(requireContext(), "$dbno db, $number no = $dbpass db, $pass pass", Toast.LENGTH_SHORT).show()
 
                         if(dbno.contentEquals(number) && dbpass.contentEquals(pass)) {
+                            Log.d("checkStage:", "pass=no Reached")
                             //Toast.makeText(here.context,"Passed", Toast.LENGTH_SHORT).show()
                             //Success
                             val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
@@ -91,12 +102,16 @@ class LoginFragment : Fragment() {
 
                             if(vm.type == "faculty") {
                                 findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToFacultyHome())
-                                myRef.removeEventListener(this)
+                                //myRef.removeEventListener(this)
                             } else if(vm.type == "hod") {
                                 findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHodHome())
-                                myRef.removeEventListener(this)
+                                //myRef.removeEventListener(this)
                             }
                         }
+                    }
+
+                    if(vm.currentUser == "none") {
+                        Toast.makeText(requireContext(), "Not Found", Toast.LENGTH_SHORT).show()
                     }
                 }
 
