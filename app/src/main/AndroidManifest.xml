@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.finite.komalmatade">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FYPKM">
         <activity
+            android:name=".ViewProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScanActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -22,4 +32,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

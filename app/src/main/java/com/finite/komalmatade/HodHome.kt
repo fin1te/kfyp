@@ -1,5 +1,6 @@
 package com.finite.komalmatade
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -57,6 +58,11 @@ class HodHome : Fragment() {
 
         binding!!.cardHod.setOnClickListener {
             findNavController().navigate(HodHomeDirections.actionHodHomeToViewProfileFragment())
+        }
+
+        binding!!.clickScanner.setOnClickListener {
+            val intent = Intent(context, ScanActivity::class.java)
+            startActivity(intent)
         }
 
     }

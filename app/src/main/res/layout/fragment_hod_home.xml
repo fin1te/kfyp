@@ -126,6 +126,16 @@
                 tools:ignore="Autofill,HardcodedText,TextFields" />
 
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/clickScanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A25253"
+                app:borderWidth="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:tint="@android:color/white"
+                android:src="@drawable/camera"/>
 
 
         </LinearLayout>
