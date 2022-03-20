@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val window = this.window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.statusBarColor = this.resources.getColor(R.color.topbar)
+        window.statusBarColor = this.resources.getColor(R.color.topbarred)
 
         Timer().schedule(object : TimerTask() {
             override fun run() {

@@ -10,4 +10,5 @@
 
     <color name="topbar">#BABABA</color>
     <color name="topbarbrown">#A25253</color>
+    <color name="topbarred">#9F1C33</color>
 </resources>
