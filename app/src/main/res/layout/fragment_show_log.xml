@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF0CC"
+
+        tools:context=".ShowLogFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logs"
+            android:layout_marginTop="20dp"
+            android:textColor="#1E1E1E"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center|top"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:columnCount="2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#1E1E1E"
+                android:text="Total Notifications : " />
+
+            <TextView
+                android:id="@+id/totalNotice"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_height="wrap_content"
+                android:text="a" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#1E1E1E"
+                android:layout_height="wrap_content"
+                android:text="Total Complaints : " />
+
+            <TextView
+                android:id="@+id/totalComp"
+                android:textSize="20sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#1E1E1E"
+                android:layout_height="wrap_content"
+                android:text="Total Faculties : " />
+
+            <TextView
+                android:id="@+id/totalFaculties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:text="a" />
+
+        </GridLayout>
+
+    </FrameLayout>
+</layout>

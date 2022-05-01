@@ -125,6 +125,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/et_loginpassword"
                 tools:ignore="Autofill,HardcodedText,TextFields" />
 
+            <TextView
+                android:id="@+id/hodLogBtn"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/brow_box"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:elevation="2dp"
+                android:text="Show Logs"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textColorHint="#484881"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_loginpassword"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/clickScanner"

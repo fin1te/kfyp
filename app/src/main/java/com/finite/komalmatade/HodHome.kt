@@ -48,7 +48,8 @@ class HodHome : Fragment() {
         }
 
         binding!!.findFacultyBtn.setOnClickListener {
-            Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(HodHomeDirections.actionHodHomeToSearchFacultyFragment())
+        //Toast.makeText(this.context, "Under Construction!", Toast.LENGTH_SHORT).show()
         }
 
         binding!!.viewCompBtn.setOnClickListener {
@@ -58,6 +59,10 @@ class HodHome : Fragment() {
 
         binding!!.cardHod.setOnClickListener {
             findNavController().navigate(HodHomeDirections.actionHodHomeToViewProfileFragment())
+        }
+
+        binding!!.hodLogBtn.setOnClickListener {
+            findNavController().navigate(HodHomeDirections.actionHodHomeToShowLogFragment())
         }
 
         binding!!.clickScanner.setOnClickListener {

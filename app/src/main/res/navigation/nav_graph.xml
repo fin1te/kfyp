@@ -47,6 +47,12 @@
         <action
             android:id="@+id/action_hodHome_to_viewProfileFragment"
             app:destination="@id/viewProfileFragment" />
+        <action
+            android:id="@+id/action_hodHome_to_searchFacultyFragment"
+            app:destination="@id/searchFacultyFragment" />
+        <action
+            android:id="@+id/action_hodHome_to_showLogFragment"
+            app:destination="@id/showLogFragment" />
     </fragment>
     <fragment
         android:id="@+id/timeTable"
@@ -85,4 +91,14 @@
         android:id="@+id/viewProfileFragment"
         android:name="com.finite.komalmatade.ViewProfileFragment"
         android:label="ViewProfileFragment" />
+    <fragment
+        android:id="@+id/searchFacultyFragment"
+        android:name="com.finite.komalmatade.SearchFacultyFragment"
+        android:label="fragment_search_faculty"
+        tools:layout="@layout/fragment_search_faculty" />
+    <fragment
+        android:id="@+id/showLogFragment"
+        android:name="com.finite.komalmatade.ShowLogFragment"
+        android:label="fragment_show_log"
+        tools:layout="@layout/fragment_show_log" />
 </navigation>
